@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle del Plan de Entrenamiento</title>
+    <link rel="stylesheet" href="../css/plan-detalle.css">
+</head>
+
+<body>
+    <div class="plan-container">
+        <button class="back-btn" id="back-btn">←</button>
+        <header class="plan-header">
+            <img src="../img/img.webp" alt="Imagen del plan" class="plan-header-img">
+            <h2 id="plan-name">Nombre del plan</h2>
+        </header>
+
+        <main class="sessions-container">
+            <!-- Las sesiones se insertarán dinámicamente aquí -->
+            <div id="sessions-list"></div>
+
+            <button class="add-session-btn" id="add-session-btn">Agregar Sesión</button>
+        </main>
+    </div>
+
+    <script src="../js/plan-detalle.js"></script>
+    <script src="../js/config.js" type="module"></script>
+</body>
+
+</html>

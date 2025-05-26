@@ -1,0 +1,77 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f6f8fa;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #444;
+}
+
+.back-button:hover {
+  color: #000;
+}
+
+.exercise-title {
+  text-align: center;
+  font-size: 28px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.gif-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.gif-container img {
+  width: 300px;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+}
+
+.info-box {
+  background-color: #f0f0f5;
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+.instructions-box {
+  background-color: #e8f0fe;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.instructions-box h2 {
+  margin-top: 0;
+}
+
+.instructions-box ul {
+  padding-left: 20px;
+}
+
+.instructions-box li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}

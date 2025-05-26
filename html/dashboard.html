@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Plan de Entrenamiento</title>
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <header>
+            <h1>Generador de Plan de <br> <span id="appName">Entrenamiento</span></h1>
+            <button id="logoutBtn" class="logout-button">Cerrar sesión</button>
+        </header>
+
+        <main>
+            <section class="personal-info">
+                <h2>Información Personal</h2>
+                <div class="info-card">
+                    <p><strong>Nombre:</strong> <span id="userName"></span></p>
+                    <p><strong>Correo:</strong> <span id="userEmail"></span></p>
+                </div>
+            </section>
+
+            <section class="training-plan">
+                <h2>Plan de Entrenamiento</h2>
+
+                <div id="planCard" class="plan-card" onclick="window.location.href='plan-detalle.html'">
+                    <div class="plan-image">
+                        <img src="../img/img.webp" alt="Plan de entrenamiento">
+                    </div>
+                    <div class="plan-details">
+                        <p><strong>Nombre del plan:</strong> <span id="planName"></span></p>
+                        <p><strong>Número de sesiones:</strong> <span id="sessionCount"></span></p>
+                    </div>
+                </div>
+
+                <!-- Botón para generar plan si no hay ninguno -->
+                <button id="generatePlanBtn" class="generate-button" style="display: none;"
+                    onclick="window.location.href='formulario.html'">
+                    Generar Plan de Entrenamiento
+                </button>
+            </section>
+        </main>
+    </div>
+
+    <script src="../js/dashboard.js" type="module"></script>
+    <script src="../js/config.js" type="module"></script>
+</body>
+
+</html>

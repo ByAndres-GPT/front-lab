@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generar Plan de Entrenamiento</title>
+    <link rel="stylesheet" href="../css/formulario.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <h1>Generador de Plan de <br> <span id="appName">Entrenamiento</span></h1>
+
+        <form id="planForm">
+            <div class="form-section">
+                <h2>Selecciona tu género</h2>
+                <div class="radio-group">
+                    <label class="radio-option">
+                        <input type="radio" name="gender" value="male" checked>
+                        <span class="radio-custom"></span>
+                        Masculino
+                    </label>
+                    <label class="radio-option">
+                        <input type="radio" name="gender" value="female">
+                        <span class="radio-custom"></span>
+                        Femenino
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>Ingresa tu edad</h2>
+                <input type="number" id="age" class="form-input" min="15" max="100" required>
+            </div>
+
+            <div class="form-row">
+                <div class="form-section half">
+                    <h2>Talla (cm)</h2>
+                    <input type="number" id="height" class="form-input" min="140" max="220" required>
+                </div>
+                <div class="form-section half">
+                    <h2>Peso (kg)</h2>
+                    <input type="number" id="weight" class="form-input" min="40" max="200" step="0.1" required>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>Objetivo</h2>
+                <select id="goal" class="form-select" required>
+                    <option value="" disabled selected>Select...</option>
+                    <option value="gain muscle">Ganar músculo</option>
+                    <option value="lose weight">Perder peso</option>
+                    <option value="maintain">Mantener</option>
+                </select>
+            </div>
+
+            <div class="form-section">
+                <h2>Días disponibles</h2>
+                <input type="number" id="days" class="form-input" min="1" max="7" value="3" required>
+            </div>
+
+            <button type="submit" class="submit-btn">Generar Plan de Entrenamiento</button>
+        </form>
+    </div>
+
+    <script src="../js/formulario.js" type="module"></script>
+    <script src="../js/config.js" type="module"></script>
+</body>
+
+</html>

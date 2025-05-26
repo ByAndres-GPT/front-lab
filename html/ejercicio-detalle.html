@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detalle del Ejercicio</title>
+    <link rel="stylesheet" href="../css/ejercicio-detalle.css" />
+</head>
+
+<body>
+    <div class="container">
+        <button id="back-btn" class="back-button">←</button>
+
+        <h1 id="exercise-title" class="exercise-title">Nombre del Ejercicio</h1>
+
+        <div class="gif-container">
+            <img id="exercise-img" src="../img/img-placeholder.png" alt="GIF del ejercicio" />
+        </div>
+
+        <div class="info-box">
+            <p><strong>Músculo principal:</strong> <span id="musculo-principal">...</span></p>
+            <p><strong>Músculos secundarios:</strong> <span id="musculos-secundarios">...</span></p>
+        </div>
+
+        <div class="instructions-box">
+            <h2>Instrucciones</h2>
+            <ul id="instrucciones"></ul>
+        </div>
+    </div>
+
+    <script src="../js/ejercicio-detalle.js"></script>
+    <script src="../js/config.js" type="module"></script>
+</body>
+
+</html>
