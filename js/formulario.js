@@ -1,3 +1,4 @@
+import { BACKEND_URL } from "./config.js";
 document.addEventListener("DOMContentLoaded", () => {
   const planForm = document.getElementById("planForm");
   const userId = localStorage.getItem("userId");

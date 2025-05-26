@@ -1,3 +1,4 @@
+//import { BACKEND_URL } from "./config.js";
 document.addEventListener("DOMContentLoaded", async () => {
   const params = new URLSearchParams(window.location.search);
   const nombreEjercicio = params.get("name");

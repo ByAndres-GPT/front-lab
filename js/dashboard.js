@@ -1,3 +1,4 @@
+import { BACKEND_URL } from "./config.js";
 document.addEventListener("DOMContentLoaded", async () => {
   // Obtener datos del usuario del localStorage
   const userName = localStorage.getItem("userName");

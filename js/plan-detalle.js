@@ -1,3 +1,4 @@
+//import { BACKEND_URL } from "./config.js";
 document.addEventListener("DOMContentLoaded", () => {
   // Obtener el plan del localStorage
   const userPlans = JSON.parse(localStorage.getItem("userPlans"));

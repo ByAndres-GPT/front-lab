@@ -1,3 +1,4 @@
+//import { BACKEND_URL } from "./config.js";
 document.addEventListener("DOMContentLoaded", () => {
   // Obtener parámetros de la URL
   const urlParams = new URLSearchParams(window.location.search);

@@ -1,4 +1,5 @@
 // URL base de tu backend (ajusta según tu configuración)
+import { BACKEND_URL } from "./config.js";
 const API_BASE_URL = `${BACKEND_URL}/usuarios`;	
 
 // Elementos del formulario
