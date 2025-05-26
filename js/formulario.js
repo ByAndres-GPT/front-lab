@@ -38,9 +38,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const planData = await response.json();
 
+      console.log("planData", planData);
+
       // 2. Enviar plan al backend
       const saveResponse = await fetch(
-        `${BACKEND_URL}/planEntrenamiento/user/${userId}`,
+        `${BACKEND_URL}/planEntrenamiento/${userId}/complete`,
         {
           method: "POST",
           headers: {
